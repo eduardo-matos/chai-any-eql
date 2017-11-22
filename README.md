@@ -17,12 +17,21 @@ chai.use(chaiAnyEql);
 ## Assertion
 
 ```js
-expect(1).to.anyEql(chai.ANY);
-expect(ANY).to.anyEql(1); // Both ways
+// For any item
+expect([1, 2, 3]).to.anyEql([1, chai.ANY, 3]);
 
-expect([1, 2, 3]).to.anyEql([1, chai.ANY, 3]); // For any item
-
+// On any level
 expect({foo: 1, bar: 2}).to.anyEql({foo: 1, bar: chai.ANY});
 expect([{ foo: { bar: { baz: 1 } } }]).anyEql([{ foo: chai.ANY }]);
-expect([{ foo: { bar: { baz: 1 } } }]).anyEql([{ foo: { bar: { baz: chai.ANY } } }]); // On any level
+expect([{ foo: { bar: { baz: 1 } } }]).anyEql([{ foo: { bar: chai.ANY } }]);
+expect([{ foo: { bar: { baz: 1 } } }]).anyEql([{ foo: { bar: { baz: chai.ANY } } }]);
+```
+
+Or
+
+```js
+expect(1).to.any.eq(chai.ANY);
+expect(2).to.any.equal(chai.ANY);
+expect([1, 2, 3]).to.any.eql([1, chai.ANY, 3]);
+expect({foo: 1, bar: 2}).to.any.eql({foo: 1, bar: chai.ANY});
 ```

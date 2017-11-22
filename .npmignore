@@ -1,0 +1,8 @@
+src/
+tests/
+.nyc_output/
+.editorconfig
+.eslintrc.json
+.npmrc
+.travis.yml
+*.tgz

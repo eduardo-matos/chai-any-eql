@@ -1,0 +1,7 @@
+extends: airbnb-base
+globals:
+  describe: 0
+  it: 0
+rules:
+  func-names: 0
+  no-underscore-dangle: 0

@@ -1,0 +1,36 @@
+{
+  "name": "chai-any-eql",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/any-eql.js",
+  "scripts": {
+    "test": "nyc --exclude tests mocha --reporter dot tests",
+    "lint": "eslint src tests",
+    "prepublish": "npm run lint && npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eduardo-matos/chai-any-eql.git"
+  },
+  "keywords": [
+    "chai",
+    "tdd",
+    "tests",
+    "any",
+    "plugin"
+  ],
+  "author": "Eduardo Matos",
+  "license": "MIT",
+  "dependencies": {
+    "chai": "4.1.2",
+    "deep-eql": "3.0.1"
+  },
+  "devDependencies": {
+    "eslint": "4.11.0",
+    "eslint-config-airbnb-base": "12.1.0",
+    "eslint-plugin-import": "2.8.0",
+    "mocha": "4.0.1",
+    "nyc": "11.3.0",
+    "sinon": "4.1.2"
+  }
+}

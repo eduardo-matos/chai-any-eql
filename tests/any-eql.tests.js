@@ -57,4 +57,11 @@ describe('Comparing to ANY', () => {
     expect(callCount).to.equal(1);
     expect(args).to.eql([false, 'expected #{this} to equal #{exp}', 'expected #{this} to not equal #{exp}', second, first]);
   });
+
+  it('As extension', () => {
+    expect(1).any.eq(ANY);
+    expect(1).any.equal(ANY);
+    expect({ foo: 1, bar: 2 }).any.eql({ foo: ANY, bar: 2 });
+    expect({ foo: { bar: 2 } }).any.deep.equal({ foo: { bar: ANY } });
+  });
 });

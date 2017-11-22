@@ -1,5 +1,8 @@
 # chai-any-eql
 
+[![Build Status](https://travis-ci.org/eduardo-matos/chai-any-eql.svg?branch=master)](https://travis-ci.org/eduardo-matos/chai-any-eql)
+[![Coverage Status](https://coveralls.io/repos/github/eduardo-matos/chai-any-eql/badge.svg?branch=master)](https://coveralls.io/github/eduardo-matos/chai-any-eql?branch=master)
+
 Allows you to wildcard values.
 
 ## Config

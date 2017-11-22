@@ -1,8 +1,10 @@
-src/
 tests/
+coverage/
+node_modules/
 .nyc_output/
 .editorconfig
-.eslintrc.json
+.eslintrc.yml
+.npmignore
 .npmrc
 .travis.yml
 *.tgz

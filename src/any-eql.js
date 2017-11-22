@@ -11,12 +11,10 @@ module.exports = function (chai) {
   }
 
   chai.Assertion.addMethod('anyEql', function (props) {
-    this.assert(
-      deepEql(this._obj, props, { comparator }),
-      'expected #{this} to equal #{exp}',
-      'expected #{this} to not equal #{exp}',
-      props,
-      this._obj,
-    );
+    const areEqual = deepEql(this._obj, props, { comparator });
+    const truthyErrorMsg = 'expected #{this} to equal #{exp}';
+    const falsyErrorMsg = 'expected #{this} to not equal #{exp}';
+
+    this.assert(areEqual, truthyErrorMsg, falsyErrorMsg, props, this._obj);
   });
 };

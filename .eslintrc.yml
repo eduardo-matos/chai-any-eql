@@ -1,6 +1,8 @@
 extends: airbnb-base
 globals:
   describe: 0
+  beforeEach: 0
+  afterEach: 0
   it: 0
 rules:
   func-names: 0

@@ -5,6 +5,15 @@ node_js:
   - "8"
   - "9"
   - "10"
+env:
+  - CHAI_VERSION=4.2
+  - CHAI_VERSION=4.1
+  - CHAI_VERSION=4.0
+  - CHAI_VERSION=3.5
+  - CHAI_VERSION=3.4
+install:
+  - npm install
+  - npm install chai@${CHAI_VERSION}
 script:
   - npm run lint
   - npm run test

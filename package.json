@@ -23,8 +23,10 @@
   "author": "Eduardo Matos",
   "license": "MIT",
   "dependencies": {
-    "chai": "4.1.2",
     "deep-eql": "3.0.1"
+  },
+  "peerDependencies": {
+    "chai": ">=3.5"
   },
   "devDependencies": {
     "coveralls": "3.0.0",
